@@ -1,0 +1,23 @@
+filters:
+  and:
+    - 'file.inFolder("Robot Learning Book")'
+    - or:
+        - 'note.type == "research-idea"'
+        - 'note.type == "experiment"'
+views:
+  - type: table
+    name: Questions and Experiments
+    order:
+      - file.name
+      - note.type
+      - note.status
+      - note.novelty
+  - type: table
+    name: Ideas
+    filters:
+      and:
+        - 'note.type == "research-idea"'
+    order:
+      - file.name
+      - note.status
+      - note.novelty

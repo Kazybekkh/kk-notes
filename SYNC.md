@@ -1,19 +1,30 @@
 # Syncing notes from My-Vault
 
-Only notes inside the vault folder `public/` are published. Private notes never enter this repo.
+Notes stay in the private vault. This repo only receives a copy of the publish set.
+
+## Publish set
+
+These vault folders are copied into `content/`, keeping their folder names:
+
+- `public/`
+- `Computer Science/`
+- `Mathematics/`
+- `Robot Learning Book/`
+- `Robot Learning Literature/`
+
+The site homepage is `content/index.md` in this repo, not a vault note.
 
 ## Paths
 
 - Vault: `/Users/kazybekkhairulla/My-Vault`
-- Publish folder: `/Users/kazybekkhairulla/My-Vault/public/`
 - Quartz repo: `/Users/kazybekkhairulla/Developer/kk-notes`
 - Site content: `/Users/kazybekkhairulla/Developer/kk-notes/content/`
 
 ## Script
 
-`scripts/sync-public-notes.py` copies everything under `My-Vault/public/` into `kk-notes/content/`, keeping relative paths. It also scans those public notes for image embeds (`![[...]]` and `![](...)`), resolves them from the note folder, vault `Screenshots/`, or elsewhere in the vault, and copies those files into `content/attachments/` under their original filename. Note text is not rewritten.
+`scripts/sync-public-notes.py` copies the publish set into `content/`. Images already inside those folders keep their relative paths. Image embeds (`![[...]]` and `![](...)`) that live outside the publish set (for example in `Screenshots/`) are copied so links resolve: `Screenshots/` files go to `content/Screenshots/`, and other outside files go to `content/attachments/`.
 
-Quartz is configured with shortest link resolution, so `![[photo.png]]` still works after the image moves to `attachments/`. Markdown links that point at a path outside `public/` (for example `![](../Screenshots/photo.png)`) are left unchanged and may break; prefer wikilinks, or keep the image inside `public/`.
+The script skips `.py`, `.pyc`, `.sh`, `.obsidian`, `__pycache__`, `Robot Learning Book/Tools/`, and videos larger than 20 MB.
 
 Dry run (default, writes nothing):
 
@@ -29,27 +40,26 @@ Copy files:
 python3 scripts/sync-public-notes.py --apply
 ```
 
-`--prune` (only with `--apply`) deletes previously synced files that are no longer in `public/`. It will not delete `content/index.md` unless `public/index.md` exists.
+`--prune` (only with `--apply`) deletes previously synced files that are no longer in the publish set. It will not delete `content/index.md` unless `public/index.md` exists.
+
+`--exclude path/from/vault/Note.md` leaves a specific note out of the copy.
 
 ## How to publish a note
 
-1. Put the note in `My-Vault/public/` (do not leave private notes there).
-2. Keep any images it embeds in the vault so the script can find them. Prefer putting those images in `public/` as well, or leave them in `Screenshots/`.
-3. Run the script with `--apply`.
-4. In `kk-notes`, commit and push branch `v5`. Cloudflare Pages will rebuild when Git is connected.
+1. Put it in one of the publish-set folders in My-Vault, or add a new folder to the script's `PUBLISH_FOLDERS` list after confirming it is safe to publish.
+2. Run the script with `--apply`.
+3. In `kk-notes`, commit and push branch `v5`, or deploy with wrangler until Git is connected.
+
+Do not move notes around in the vault just to publish them; that would break Obsidian links.
 
 ## How to unpublish a note
 
-1. Remove it from `My-Vault/public/`.
+1. Remove it from the publish set, or pass `--exclude`.
 2. Run the script with `--apply --prune`.
 3. Commit and push `v5`.
 
-## Quartz Syncer (optional, recommended later)
-
-The [Quartz Syncer](https://github.com/saberzero1/quartz-syncer) Obsidian plugin can publish only a chosen folder to this repo's `content/` folder on a desktop timer, so editing a public note is the only manual writing step. Install it if you want auto-publish from Obsidian. Until then, use the script after you add or remove notes in `public/`. Obsidian Git should keep pointing at the private `My-Vault` repo, not at `kk-notes`.
-
 ## Safety
 
-- Never make `My-Vault` public.
-- Never run this script against folders other than `public/` for Markdown.
+- Never make `My-Vault` public, and never commit or push My-Vault from this workflow.
+- Keep Obsidian Git pointed at My-Vault, not at `kk-notes`.
 - Do not commit secrets into this repo.

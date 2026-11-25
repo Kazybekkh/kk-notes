@@ -1,0 +1,20 @@
+filters:
+  and:
+    - 'file.inFolder("Robot Learning Book")'
+    - 'note.type == "chapter"'
+views:
+  - type: table
+    name: Chapters
+    order:
+      - file.name
+      - note.chapter
+      - note.status
+      - note.tags
+  - type: table
+    name: To Study
+    filters:
+      and:
+        - 'note.status != "complete"'
+    order:
+      - file.name
+      - note.status

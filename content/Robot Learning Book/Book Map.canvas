@@ -1,0 +1,390 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "type": "file",
+      "file": "Robot Learning Book/Home.md",
+      "x": 560,
+      "y": -350,
+      "width": 460,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "chapter-1",
+      "type": "file",
+      "file": "Robot Learning Book/01 Math for Learning.md",
+      "x": 0,
+      "y": 0,
+      "width": 370,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "chapter-2",
+      "type": "file",
+      "file": "Robot Learning Book/02 Geometry and Kinematics.md",
+      "x": 430,
+      "y": 0,
+      "width": 370,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "chapter-3",
+      "type": "file",
+      "file": "Robot Learning Book/03 Dynamics and Feedback.md",
+      "x": 860,
+      "y": 0,
+      "width": 370,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "chapter-4",
+      "type": "file",
+      "file": "Robot Learning Book/04 Perception and State.md",
+      "x": 1290,
+      "y": 0,
+      "width": 370,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "chapter-5",
+      "type": "file",
+      "file": "Robot Learning Book/05 Training Neural Policies.md",
+      "x": 0,
+      "y": 290,
+      "width": 370,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "chapter-6",
+      "type": "file",
+      "file": "Robot Learning Book/06 Imitation and Distribution Shift.md",
+      "x": 430,
+      "y": 290,
+      "width": 370,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "chapter-7",
+      "type": "file",
+      "file": "Robot Learning Book/07 ACT and Action Sequences.md",
+      "x": 860,
+      "y": 290,
+      "width": 370,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "chapter-8",
+      "type": "file",
+      "file": "Robot Learning Book/08 Diffusion and Flow Matching.md",
+      "x": 1290,
+      "y": 290,
+      "width": 370,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "chapter-9",
+      "type": "file",
+      "file": "Robot Learning Book/09 Reinforcement Learning.md",
+      "x": 0,
+      "y": 580,
+      "width": 370,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "chapter-10",
+      "type": "file",
+      "file": "Robot Learning Book/10 Offline RL and Data Coverage.md",
+      "x": 430,
+      "y": 580,
+      "width": 370,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "chapter-11",
+      "type": "file",
+      "file": "Robot Learning Book/11 World Models and Planning.md",
+      "x": 860,
+      "y": 580,
+      "width": 370,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "chapter-12",
+      "type": "file",
+      "file": "Robot Learning Book/12 Human Data and Embodiment.md",
+      "x": 1290,
+      "y": 580,
+      "width": 370,
+      "height": 220,
+      "color": "4"
+    },
+    {
+      "id": "chapter-13",
+      "type": "file",
+      "file": "Robot Learning Book/13 Vision Language Action Models.md",
+      "x": 0,
+      "y": 870,
+      "width": 370,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "chapter-14",
+      "type": "file",
+      "file": "Robot Learning Book/14 Contact and Dexterity.md",
+      "x": 430,
+      "y": 870,
+      "width": 370,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "chapter-15",
+      "type": "file",
+      "file": "Robot Learning Book/15 Robot Systems and Deployment.md",
+      "x": 860,
+      "y": 870,
+      "width": 370,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "chapter-16",
+      "type": "file",
+      "file": "Robot Learning Book/16 Evaluation and Uncertainty.md",
+      "x": 1290,
+      "y": 870,
+      "width": 370,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "chapter-17",
+      "type": "file",
+      "file": "Robot Learning Book/17 Finding a Research Question.md",
+      "x": 0,
+      "y": 1160,
+      "width": 370,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "chapter-18",
+      "type": "file",
+      "file": "Robot Learning Book/18 Masters Research and Startup Path.md",
+      "x": 430,
+      "y": 1160,
+      "width": 370,
+      "height": 220,
+      "color": "2"
+    },
+    {
+      "id": "research",
+      "type": "file",
+      "file": "Robot Learning Book/Research/Research Dashboard.md",
+      "x": 0,
+      "y": 1550,
+      "width": 370,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "jev",
+      "type": "file",
+      "file": "Robot Learning Book/Jev - TypeSafe AI.md",
+      "x": 430,
+      "y": 1550,
+      "width": 370,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "plan",
+      "type": "file",
+      "file": "Robot Learning Book/24 Week Learning Path.md",
+      "x": 860,
+      "y": 1550,
+      "width": 370,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "literature",
+      "type": "file",
+      "file": "Robot Learning Literature/Start Here.md",
+      "x": 1290,
+      "y": 1550,
+      "width": 370,
+      "height": 220,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-0",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "chapter-1",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-1",
+      "fromNode": "chapter-1",
+      "fromSide": "bottom",
+      "toNode": "chapter-2",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-2",
+      "fromNode": "chapter-2",
+      "fromSide": "bottom",
+      "toNode": "chapter-3",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-3",
+      "fromNode": "chapter-3",
+      "fromSide": "bottom",
+      "toNode": "chapter-4",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-4",
+      "fromNode": "chapter-4",
+      "fromSide": "bottom",
+      "toNode": "chapter-5",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-5",
+      "fromNode": "chapter-5",
+      "fromSide": "bottom",
+      "toNode": "chapter-6",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-6",
+      "fromNode": "chapter-6",
+      "fromSide": "bottom",
+      "toNode": "chapter-7",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-7",
+      "fromNode": "chapter-7",
+      "fromSide": "bottom",
+      "toNode": "chapter-8",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-8",
+      "fromNode": "chapter-8",
+      "fromSide": "bottom",
+      "toNode": "chapter-9",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-9",
+      "fromNode": "chapter-9",
+      "fromSide": "bottom",
+      "toNode": "chapter-10",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-10",
+      "fromNode": "chapter-10",
+      "fromSide": "bottom",
+      "toNode": "chapter-11",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-11",
+      "fromNode": "chapter-11",
+      "fromSide": "bottom",
+      "toNode": "chapter-12",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-12",
+      "fromNode": "chapter-12",
+      "fromSide": "bottom",
+      "toNode": "chapter-13",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-13",
+      "fromNode": "chapter-13",
+      "fromSide": "bottom",
+      "toNode": "chapter-14",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-14",
+      "fromNode": "chapter-14",
+      "fromSide": "bottom",
+      "toNode": "chapter-15",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-15",
+      "fromNode": "chapter-15",
+      "fromSide": "bottom",
+      "toNode": "chapter-16",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-16",
+      "fromNode": "chapter-16",
+      "fromSide": "bottom",
+      "toNode": "chapter-17",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-17",
+      "fromNode": "chapter-17",
+      "fromSide": "bottom",
+      "toNode": "chapter-18",
+      "toSide": "top"
+    },
+    {
+      "id": "extra-0",
+      "fromNode": "chapter-17",
+      "fromSide": "bottom",
+      "toNode": "research",
+      "toSide": "top"
+    },
+    {
+      "id": "extra-1",
+      "fromNode": "chapter-13",
+      "fromSide": "bottom",
+      "toNode": "jev",
+      "toSide": "top"
+    },
+    {
+      "id": "extra-2",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "plan",
+      "toSide": "top"
+    },
+    {
+      "id": "extra-3",
+      "fromNode": "research",
+      "fromSide": "bottom",
+      "toNode": "literature",
+      "toSide": "top"
+    }
+  ]
+}

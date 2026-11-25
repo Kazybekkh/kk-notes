@@ -1,7 +1,7 @@
 .DS_Store
 .gitignore
 node_modules
-public
+/public
 prof
 tsconfig.tsbuildinfo
 .obsidian
@@ -12,3 +12,7 @@ replit.nix
 .quartz/
 quartz/cli/tui/dist/
 .turbo/
+
+.wrangler/
+
+__pycache__/
